@@ -77,9 +77,9 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://zhuzhihengcisco.github.io/" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weibo" target="_blank" href="https://weibo.com/p/1005051948053901/home?from=page_100505&mod=TAB#place" title="weibo"><i class="icon-weibo"></i></a>
 		        
 					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 		        
@@ -118,9 +118,9 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://zhuzhihengcisco.github.io/" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weibo" target="_blank" href="https://weibo.com/p/1005051948053901/home?from=page_100505&mod=TAB#place" title="weibo"><i class="icon-weibo"></i></a>
 			        
 						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 			        
@@ -151,6 +151,129 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-python基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>@<a href="%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95">TOC</a></p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><font color=#999AAA>用博客的方式记录一下自己的学习过程。先从python学起吧</font></p>
+<h1 id="一、Python简介"><a href="#一、Python简介" class="headerlink" title="一、Python简介"></a>一、Python简介</h1><p>python是一个高层次的结合了解释性、编译性、互动性的面向对象的脚本语言。</p>
+<p>​    **python是一种解释型语言：    **解释型语言没有编译环节。</p>
+<p>​    **python是交互式语言：    **可以在python提示符&gt;&gt;&gt;后面直接执行代码</p>
+<p>​    <strong>python是面向对象的语言：</strong>Python支持面向对象的风格或代码封装在对象的编程技术。</p>
+<h2 id="1-python发展历史"><a href="#1-python发展历史" class="headerlink" title="1.python发展历史"></a>1.python发展历史</h2><p>Python 是由 Guido van Rossum 在八十年代末和九十年代初，在荷兰国家数学和计算机科学研究所设计出来的。</p>
+<p>Python 本身也是由诸多其他语言发展而来的,这包括 ABC、Modula-3、C、C++、Algol-68、SmallTalk、Unix shell 和其他的脚本语言等等。</p>
+<p>像 Perl 语言一样，Python 源代码同样遵循 GPL(GNU General Public License)协议。</p>
+<p>现在 Python 是由一个核心开发团队在维护，Guido van Rossum 仍然占据着至关重要的作用，指导其进展。</p>
+<p>Python 2.0 于 2000 年 10 月 16 日发布，增加了实现完整的垃圾回收，并且支持 Unicode。</p>
+<p>Python 3.0 于 2008 年 12 月 3 日发布，此版不完全兼容之前的 Python 源代码。不过，很多新特性后来也被移植到旧的Python 2.6/2.7版本。</p>
+<p>Python 3.0 版本，常被称为 Python 3000，或简称 Py3k。相对于 Python 的早期版本，这是一个较大的升级。</p>
+<p>Python 2.7 被确定为最后一个 Python 2.x 版本，它除了支持 Python 2.x 语法外，还支持部分 Python 3.1 语法。</p>
+<h2 id="2-python特点"><a href="#2-python特点" class="headerlink" title="2.python特点"></a>2.python特点</h2><ul>
+<li><strong>1.易于学习：</strong>Python有相对较少的关键字，结构简单，和一个明确定义的语法，学习起来更加简单。</li>
+<li><strong>2.易于阅读：</strong>Python代码定义的更清晰。</li>
+<li><strong>3.易于维护：</strong>Python的成功在于它的源代码是相当容易维护的。</li>
+<li><strong>4.一个广泛的标准库：</strong>Python的最大的优势之一是丰富的库，跨平台的，在UNIX，Windows和Macintosh兼容很好。</li>
+<li><strong>5.互动模式：</strong>互动模式的支持，您可以从终端输入执行代码并获得结果的语言，互动的测试和调试代码片断。</li>
+<li><strong>6.可移植：</strong>基于其开放源代码的特性，Python已经被移植（也就是使其工作）到许多平台。</li>
+<li><strong>7.可扩展：</strong>如果你需要一段运行很快的关键代码，或者是想要编写一些不愿开放的算法，你可以使用C或C++完成那部分程序，然后从你的Python程序中调用。</li>
+<li><strong>8.数据库：</strong>Python提供所有主要的商业数据库的接口。</li>
+<li><strong>9.GUI编程：</strong>Python支持GUI可以创建和移植到许多系统调用。</li>
+<li><strong>10.可嵌入:</strong> 你可以将Python嵌入到C/C++程序，让你的程序的用户获得”脚本化”的能力。</li>
+</ul>
+<h1 id="二、安装Python"><a href="#二、安装Python" class="headerlink" title="二、安装Python"></a>二、安装Python</h1><p>python是一个支持多平台的语言，支持Linux、Windows、macOS等系统。除了官网下载python安装包进行下载也可以下载Anaconda进行安装。</p>
+<h2 id="1-Windows安装"><a href="#1-Windows安装" class="headerlink" title="1.Windows安装"></a>1.Windows安装</h2><p><img src="C:\Users\94591\AppData\Roaming\Typora\typora-user-images\image-20210223153040605.png" alt="image-20210223153040605"></p>
+<p>一定要添加环境变量，可以安装在自己想要的环境。</p>
+<h2 id="2-Linux安装"><a href="#2-Linux安装" class="headerlink" title="2.Linux安装"></a>2.Linux安装</h2><p>Linux系统下下载对应版本的源码压缩包，解压后运行即可，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># tar -zxvf Python-3.6.1.tgz</span></span><br><span class="line"><span class="comment"># cd Python-3.6.1</span></span><br><span class="line"><span class="comment"># ./configure</span></span><br><span class="line"><span class="comment"># make &amp;&amp; make install</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-macOS安装"><a href="#3-macOS安装" class="headerlink" title="3.macOS安装"></a>3.macOS安装</h2><p>macOS系统自带python2.7版本环境，也可以通过官网下载最新版本python3进行安装。</p>
+<h1 id="三、运行方式"><a href="#三、运行方式" class="headerlink" title="三、运行方式"></a>三、运行方式</h1><h2 id="1-命令行模式"><a href="#1-命令行模式" class="headerlink" title="1.命令行模式"></a>1.命令行模式</h2><p><img src="C:\Users\94591\AppData\Roaming\Typora\typora-user-images\image-20210223153335913.png" alt="image-20210223153335913"></p>
+<p>通过win+R打开命令行，输入python运行python</p>
+<h2 id="2-IDLE模式"><a href="#2-IDLE模式" class="headerlink" title="2.IDLE模式"></a>2.IDLE模式</h2><p><img src="C:\Users\94591\AppData\Roaming\Typora\typora-user-images\image-20210223154211184.png" alt="image-20210223154211184"></p>
+<p>打开IDEL运行pythonIDEL</p>
+<h2 id="3-运行脚本"><a href="#3-运行脚本" class="headerlink" title="3.运行脚本"></a>3.运行脚本</h2><p>​    <strong>1、命令行脚本：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ python script.py </span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line">C:&gt;python script.py</span><br></pre></td></tr></table></figure>
+<p>​    <strong>2、集成开发环境IDE：Pycharm</strong></p>
+<p><img src="C:\Users\94591\AppData\Roaming\Typora\typora-user-images\image-20210223154656685.png" alt="image-20210223154656685"></p>
+<h1 id="四、常用开发工具"><a href="#四、常用开发工具" class="headerlink" title="四、常用开发工具"></a>四、常用开发工具</h1><p>PyCharm</p>
+<p><img src="C:\Users\94591\AppData\Roaming\Typora\typora-user-images\image-20210223155013850.png" alt="image-20210223155013850"></p>
+<p>VSCode</p>
+<p><img src="C:\Users\94591\AppData\Roaming\Typora\typora-user-images\image-20210223154839384.png" alt="image-20210223154839384"></p>
+<p>Sublime Text</p>
+<p><img src="C:\Users\94591\AppData\Roaming\Typora\typora-user-images\image-20210223154815061.png" alt="image-20210223154815061"></p>
+<h1 id="五、编码规范"><a href="#五、编码规范" class="headerlink" title="五、编码规范"></a>五、编码规范</h1><h2 id="1-代码编码"><a href="#1-代码编码" class="headerlink" title="1.代码编码"></a>1.代码编码</h2><p>​    1、文件编码和python编码格式全部为utf-8，在python代码开头统一添加# -<em>- coding: utf-8 -</em>-。</p>
+<h2 id="2-命名规范"><a href="#2-命名规范" class="headerlink" title="2.命名规范"></a>2.命名规范</h2><p>​    1、包名、模块名、局部变量名、函数名</p>
+<p>​    全小写、下划线式</p>
+<p>​    2、全局变量</p>
+<p>​    全大写、下划线式驼峰</p>
+<p>​    3、类名</p>
+<p>​    首字母大写式驼峰</p>
+<p>​    4、变量名命名</p>
+<p>​    尽量体现变量的数据类型和具体意义</p>
+<h1 id="六、模块管理"><a href="#六、模块管理" class="headerlink" title="六、模块管理"></a>六、模块管理</h1><h2 id="1-模块和包"><a href="#1-模块和包" class="headerlink" title="1.模块和包"></a>1.模块和包</h2><p>项目体积的增大所有代码都放在一个文件中，无法满需求，使用模块和包解决这个问题，模块可以将一些相关联的代码组合在一个py文件中，包可以将一些相关联的模块组合在一个文件夹中。</p>
+<h2 id="2-模块导入"><a href="#2-模块导入" class="headerlink" title="2.模块导入"></a>2.模块导入</h2><p>​    <strong>1、import</strong></p>
+<p>​    导入某个模块，如果使用模块中的函数或者方法变量，则需要使用模块名.xxx形式调用。</p>
+<p>​    <strong>2、from xxx import xxx</strong></p>
+<p>​    从某个模块中导入某个对象或者方法，也可以一次性从模块中导入所有的对象，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> c <span class="keyword">import</span> c_method  //导入单个对象或方法</span><br><span class="line"><span class="keyword">from</span> c <span class="keyword">import</span> *         //导入模块中所有的方法</span><br></pre></td></tr></table></figure>
+<p>​    <strong>3、from a import b as c</strong></p>
+<p>​    从a中导入b并命名为c，在代码中引用b，通过c来引用</p>
+<h2 id="3-包"><a href="#3-包" class="headerlink" title="3.包"></a>3.包</h2><p>包的本质是一个文件夹，是将一些相关联的模块组合在一起。但是想要让python识别这是一个包需要在文件夹中创建一个<code>__init__.py</code>一个文件夹中只有拥有了<code>__init__.py</code>这个文件才能视为一个包</p>
+<p>同一个包中的模块如果需要相互导入可以使用<code>from . import xxx</code></p>
+<h2 id="4-python-all-变量用法"><a href="#4-python-all-变量用法" class="headerlink" title="4.python __all__变量用法"></a>4.python <code>__all__</code>变量用法</h2><p><code>__all__</code>变量是一个特殊的变量，可以用在py文件中也可以用在<code>__init__.py</code>中</p>
+<p>1、普通模块</p>
+<p>​    表示一个模块中允许哪些属性可以被导入到别的模块中</p>
+<p>​    <code>__all__</code>变量是为了限制或者指定能被导入到别的模块的函数、类、全局变量等，如果指定了就只能导入指定的内容，如果没有指定则都可以导入，私有属性除外。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">__all__&#x3D;[&#39;test&#39;,&#39;hello&#39;,&#39;Person&#39;]</span><br><span class="line">test &#x3D; &#39;python&#39;</span><br><span class="line">def hello():</span><br><span class="line">	print(&#39;hello&#39;)</span><br><span class="line">class Person(object):</span><br><span class="line">	def __init__(self):</span><br><span class="line">		print(&#39;person init method&#39;)</span><br><span class="line">		</span><br></pre></td></tr></table></figure>
+<p>2、在包下的<code>__init__.py</code>文件中</p>
+<p>添加<code>__all__=[&quot;echo&quot;,&quot;sound&quot;,&quot;reverse&quot;]</code> 时在使用<code>from xxx import *</code>时包含其中三个模块，当<code>__init__.py</code>为空时，只是导入这个包，并非导入整个模块</p>
+<h2 id="5-模块、包安装"><a href="#5-模块、包安装" class="headerlink" title="5.模块、包安装"></a>5.模块、包安装</h2><p>​    <strong>1、使用pip进行安装</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">pip --version     <span class="comment"># Python2.x 版本命令</span></span><br><span class="line">   pip3 --version    <span class="comment"># Python3.x 版本命令</span></span><br><span class="line"></span><br><span class="line">   pip install request <span class="comment">#安装模块</span></span><br><span class="line">   pip install django == <span class="number">1.10</span><span class="number">.5</span>  <span class="comment">#安装指定版本的包</span></span><br><span class="line">pip uninstall request  <span class="comment">#卸载模块</span></span><br><span class="line">pip install -U django <span class="comment">#升级包</span></span><br><span class="line">   </span><br><span class="line">   $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py   <span class="comment"># 下载安装脚本</span></span><br><span class="line">$ sudo python get-pip.py    <span class="comment"># 运行安装脚本</span></span><br><span class="line">   </span><br><span class="line">   $ sudo python3 get-pip.py    <span class="comment"># 运行安装脚本。</span></span><br><span class="line"></span><br><span class="line">   pip show  <span class="comment">#显示安装包信息</span></span><br><span class="line"></span><br><span class="line">   pip search SomePackage <span class="comment">#搜索指定包</span></span><br><span class="line">   </span><br><span class="line">   pip <span class="built_in">list</span> <span class="comment">#列出以安装的包</span></span><br><span class="line">   </span><br><span class="line">   <span class="comment">#升级包</span></span><br><span class="line">   Linux</span><br><span class="line">   pip install --upgrade pip    <span class="comment"># python2.x</span></span><br><span class="line">pip3 install --upgrade pip   <span class="comment"># python3.x</span></span><br><span class="line">Windows</span><br><span class="line">   python -m pip install -U pip   <span class="comment"># python2.x</span></span><br><span class="line">python -m pip3 install -U pip    <span class="comment"># python3.x</span></span><br><span class="line">   </span><br><span class="line">   <span class="comment">#未安装pip</span></span><br><span class="line">   python -m ensurepip --default-pip</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>​    </p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>今天的内容就这些啦，有不足的地方以后再补充。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/02/24/python%E5%9F%BA%E7%A1%80/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-MySQL基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -489,7 +612,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;我只是个国企外包搬砖党&lt;br&gt;</div>
   	  	
     	</section>
     
